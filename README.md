@@ -1,18 +1,29 @@
 # PoolShark
 
 Data types:
+
   Loc:      A tuple (x, y).
+  
             The center of the table is (0,0).
+            
             Up and to the right is positive.
+            
             We will measure in millimeters (to avoid underflow errors).
+            
             Pool tables apparently come in different sizes, so someone needs to look up how large ours is.
+            
             Pocket sizes we also need to measure
+            
             Pool balls are 61.5 mm diameter.
             
   Ball loc: The center of the ball.
+  
   Pocket loc: the center of the pocket.
+  
   Bucketing: A dict of loc->bool, using the coordinates of the bottom-left corner of the bucket loc.
+  
              So for example:  BUCKETING[(150, -150)] = 1
+
 
 Input                         Output                        Person
 --------------------------------------------------------------------------------------
