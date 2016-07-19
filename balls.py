@@ -1,5 +1,6 @@
 class Ball:
     def __init__(self, x, y):
+        self.diameter = 0.1
         self.x = x
         self.y = y
 
