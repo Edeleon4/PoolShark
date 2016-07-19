@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <StartArguments>--imgDir=C:/Workspace_BostonDSEng/teamTJ/wildnature/apiCall_wildNature/bin/Debug --imgMaxWidth=1000</StartArguments>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <StartArguments>--imgDir=C:/Users/pabuehle/Desktop/PROJECTS/wildNatureInstitute_giraffe/giraffeExecutable/testImages</StartArguments>
+  </PropertyGroup>
+</Project>

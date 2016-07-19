@@ -1,7 +1,14 @@
-class Ball:
+class Coord:
     def __init__(self, x, y):
         self.x = x
         self.y = y
+
+class Ball:
+    def __init__(self, x, y):
+        self.diameter = 0.1
+        self.x = x
+        self.y = y
+        self.coord = Coord(x,y)
 
 class ObjectBall(Ball):
     pass
