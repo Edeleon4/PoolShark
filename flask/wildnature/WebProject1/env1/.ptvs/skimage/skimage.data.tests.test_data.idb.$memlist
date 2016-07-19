@@ -1,0 +1,13 @@
+test_text
+run_module_suite
+test_lena
+test_coffee
+test_camera
+test_page
+test_moon
+test_astronaut
+test_chelsea
+test_clock
+assert_equal
+data
+test_checkerboard

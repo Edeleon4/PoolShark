@@ -1,0 +1,11 @@
+test_correct_labelsize
+pairwise_distances
+test_silhouette
+np
+test_no_nan
+assert_raises_regexp
+assert_false
+csr_matrix
+assert_almost_equal
+datasets
+silhouette_score

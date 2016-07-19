@@ -1,0 +1,13 @@
+sio
+run_module_suite
+os
+test_imread_uint16
+test_imread_uint16_big_endian
+np
+NamedTemporaryFile
+si
+assert_array_almost_equal
+assert_array_equal
+TestSave
+_plugins
+teardown

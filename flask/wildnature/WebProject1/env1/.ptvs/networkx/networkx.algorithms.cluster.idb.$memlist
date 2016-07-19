@@ -1,0 +1,12 @@
+__author__
+__all__
+_triangles_and_degree_iter
+triangles
+square_clustering
+transitivity
+clustering
+average_clustering
+combinations
+NetworkXError
+nx
+_weighted_triangles_and_degree_iter

@@ -1,0 +1,13 @@
+assert_raises
+test_histogram_of_oriented_gradients
+test_hog_basic_orientations_and_data_types
+assert_almost_equal
+data
+np
+test_hog_color_image_unsupported_error
+feature
+test_hog_orientations_circle
+test_hog_image_size_cell_size_mismatch
+img_as_float
+ndimage
+draw

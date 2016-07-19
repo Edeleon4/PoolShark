@@ -1,0 +1,17 @@
+np
+clean_warning_registry
+test_l2_deprecation
+nose
+test_l1_min_c
+sp
+LinearSVC
+Y2
+sparse_X
+dense_X
+Y1
+warnings
+l1_min_c
+assert_true
+LogisticRegression
+check_l1_min_c
+assert_equal

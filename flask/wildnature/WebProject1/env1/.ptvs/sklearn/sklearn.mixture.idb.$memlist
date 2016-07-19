@@ -1,0 +1,11 @@
+distribute_covar_matrix_to_match_covariance_type
+gmm
+tests
+sample_gaussian
+__all__
+DPGMM
+_validate_covars
+log_multivariate_normal_density
+GMM
+dpgmm
+VBGMM

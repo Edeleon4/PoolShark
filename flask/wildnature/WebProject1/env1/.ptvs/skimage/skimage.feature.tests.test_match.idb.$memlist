@@ -1,0 +1,16 @@
+np
+test_binary_descriptors
+corner_harris
+test_binary_descriptors_unequal_descriptor_sizes_error
+BRIEF
+data
+test_max_distance
+match_descriptors
+testing
+rgb2gray
+test_binary_descriptors_lena_rotation_crosscheck_true
+assert_raises
+test_binary_descriptors_lena_rotation_crosscheck_false
+corner_peaks
+tf
+assert_equal

@@ -1,0 +1,15 @@
+__builtins__
+__doc__
+__file__
+__name__
+__package__
+__pyx_capi__
+__test__
+assign_rows_csr
+csc_mean_variance_axis0
+csr_mean_variance_axis0
+csr_row_norms
+inplace_csr_row_normalize_l1
+inplace_csr_row_normalize_l2
+np
+sp

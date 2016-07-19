@@ -1,0 +1,11 @@
+assert_raises
+assert_warns
+assert_less
+assert_almost_equal
+np
+FactorAnalysis
+test_factor_analysis
+assert_array_almost_equal
+ConvergenceWarning
+assert_equal
+assert_greater

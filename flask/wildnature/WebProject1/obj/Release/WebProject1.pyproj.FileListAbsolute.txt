@@ -1,0 +1,8 @@
+C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\bin\Microsoft.PythonTools.WebRole.dll
+C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\bin\AzureSetup.cfg
+C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\bin\Microsoft.PythonTools.AzureSetup.exe
+C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\bin\Microsoft.PythonTools.AzureSetup.exe.config
+C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\bin\wfastcgi.py
+C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\obj\Release\deployment-updated-orig-prefix.txt
+C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\ptvs_virtualenv_proxy.py
+C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\obj\Release\web.debug.config

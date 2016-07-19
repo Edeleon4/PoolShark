@@ -1,0 +1,12 @@
+test_load_surf
+test_load_sift
+os
+load_sift
+__name__
+NamedTemporaryFile
+run_module_suite
+load_surf
+False
+open
+assert_equal
+len

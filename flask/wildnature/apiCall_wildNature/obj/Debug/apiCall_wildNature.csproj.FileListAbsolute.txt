@@ -1,0 +1,8 @@
+C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\apiCall_wildNature\bin\Debug\apiCall_wildNature.exe.config
+C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\apiCall_wildNature\bin\Debug\apiCall_wildNature.exe
+C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\apiCall_wildNature\bin\Debug\apiCall_wildNature.pdb
+C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\apiCall_wildNature\bin\Debug\Newtonsoft.Json.dll
+C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\apiCall_wildNature\bin\Debug\Newtonsoft.Json.xml
+C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\apiCall_wildNature\obj\Debug\apiCall_wildNature.csprojResolveAssemblyReference.cache
+C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\apiCall_wildNature\obj\Debug\apiCall_wildNature.exe
+C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\apiCall_wildNature\obj\Debug\apiCall_wildNature.pdb

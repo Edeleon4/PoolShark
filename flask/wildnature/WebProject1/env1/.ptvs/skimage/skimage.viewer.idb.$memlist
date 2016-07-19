@@ -1,0 +1,11 @@
+tests
+has_qt
+plugins
+widgets
+ImageViewer
+warnings
+CollectionViewer
+viewers
+canvastools
+qt
+utils

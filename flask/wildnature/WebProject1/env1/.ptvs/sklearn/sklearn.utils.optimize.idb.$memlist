@@ -1,0 +1,12 @@
+_line_search_wolfe12
+_LineSearchError
+line_search_wolfe1
+func
+warnings
+line_search_wolfe2
+out
+A
+newton_cg
+x0
+np
+func_grad_hess

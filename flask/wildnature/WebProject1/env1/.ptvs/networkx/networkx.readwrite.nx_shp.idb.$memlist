@@ -1,0 +1,6 @@
+nx
+setup_module
+write_shp
+read_shp
+__all__
+__author__

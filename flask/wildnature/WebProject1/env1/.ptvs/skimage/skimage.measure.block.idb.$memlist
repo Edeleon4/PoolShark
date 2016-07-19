@@ -1,0 +1,4 @@
+block_reduce
+np
+view_as_blocks
+pad

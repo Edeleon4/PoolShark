@@ -1,0 +1,10 @@
+rgb2lab
+_enforce_label_connectivity_cython
+img_as_float
+_slic_cython
+np
+coll
+slic
+regular_grid
+ndimage
+warnings
