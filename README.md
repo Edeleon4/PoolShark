@@ -27,9 +27,8 @@ Input                         |Output                        |Person | More spec
 ------------------------------|------------------------------|--------------- | -----
 Picture of pool table         |Non-skewed picture            |Eddy's magic phone thing | what is image representation? 3d array of RGB?
 Non-skewed picture            |Dict of ball locs             |Hunter/Ilya |  output maps int:loc, where 0 is always cue ball, and all other balls are named by their numbers. if a ball is not on the table, just don't include it in the dict
-Ball loc        |Expanded ball locs          |Ratan | 
+Loc        |Expanded locs          |Ratan | 
 Dict of ball locs, target ball ID      |Binary ball bucketing (non-cue, non-target)        |Ratan
-None                          |Expanded pocket locs          |Ratan
 Pocket locs, cue loc, and target ball loc          |Potentially-hittable   pocket locs        |Eddy
 Origin loc, end loc           |Angle necessary               |Eddy
 Pocket loc, cue loc, target ball loc      |Cue ball loc during  collision          |Eddy
