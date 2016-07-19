@@ -20,23 +20,21 @@ Data types:
   
   Pocket loc: the center of the pocket.
   
-  Bucketing: A dict of loc->bool, using the coordinates of the bottom-left corner of the bucket loc.
-  
-             So for example:  BUCKETING[(150, -150)] = 1
+  Bucketing: A dict of loc->bool, using the coordinates of the bottom-left corner of the bucket loc. So for example:  BUCKETING[(150, -150)] = 1
 
 
 Input                         |Output                        |Person
 ------------------------------|------------------------------|---------------
 Picture of pool table         |Non-skewed picture            |Eddy's magic phone thing
 Non-skewed picture            |Dict of ball locs             |Hunter/Ilya
-Dict of ball coordinates      |Potentially-colliding  ball locs        |Ratan
-Dict of ball coordinates, target ball ID        |Target ball loc list          |Ratan
-Dict of ball coordinates      |Binary ball bucketing         |Ratan
+Dict of ball locs, target ball ID        |Target ball locs          |Ratan
+Dict of ball locs      |Ball locs (non-cue, non-target)        |Ratan
+Dict of ball locs      |Binary ball bucketing         |Ratan
 None                          |Expanded pocket locs          |Ratan
 Pocket locs, cue loc, and target ball loc          |Potentially-hittable   pocket locs        |Eddy
 Origin loc, end loc           |Angle necessary               |Eddy
-Pocket loc, cue loc,    target ball loc      |Cue ball loc during  collision          |Eddy
-Origin loc, end loc,ball bucketing          |Binary path-has-collision     |????
+Pocket loc, cue loc, target ball loc      |Cue ball loc during  collision          |Eddy
+Origin loc, end loc, ball bucketing          |Binary path-has-collision     |????
 Origin loc, end loc           |Path score                    |????
 Put it all together           |Angle of shot                 |????
 Angle of shot                 |Picture with shot drawn in    |????
