@@ -30,9 +30,9 @@ get_shot_difficulty = unimplemented
 ##from aarti import unskew_table
 ##from hunter import get_ball_locs
 ##from ratan import expand_loc
-##from eddy import feasible_shot, cueball_collision_loc
 ##from someone import get_buckets, path_has_collision
 ##from someone import get_shot_difficulty
+from eddie import cueball_collision_loc, feasible_shot
 from jacob_pool import get_angle_from_path
 
 flatten = lambda l:[item for sublist in l for item in sublist]
