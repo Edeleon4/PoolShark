@@ -115,17 +115,26 @@ def poolTableDetectAndGetCoordinates(imgPath):
     high_bkg = np.array([40, 190, 200], dtype=np.uint8)
 
     low_blue = np.array([110,80,80], dtype=np.uint8)
-    high_blue = np.array([130,255,255], dtype=np.uint8)
+    high_blue = np.array([120,255,255], dtype=np.uint8)
+
+    low_purple = np.array([110,0,0], dtype=np.uint8)
+    high_purple = np.array([150,100,100], dtype=np.uint8)
 
     low_yellow = np.array([20, 150, 150], dtype=np.uint8)
     high_yellow = np.array([30, 255, 255], dtype=np.uint8)
 
     low_red = np.array([160, 100, 100], dtype=np.uint8)
     high_red = np.array([180, 255, 255], dtype=np.uint8)
+    
+    low_orange = np.array([5, 200, 110], dtype=np.uint8)
+    high_orange = np.array([15, 255, 255], dtype=np.uint8)
+    
+    low_brown = np.array([0, 90, 10], dtype=np.uint8)
+    high_brown = np.array([15, 120, 65], dtype=np.uint8)
 
     # mask out the background
     bkg_mask = cv2.inRange(hsv, low_bkg, high_bkg)
-    img_bkg_mask = cv2.bitwise_and(frame,frame, mask=bkg_mask)
+    # img_bkg_mask = cv2.bitwise_and(frame,frame, mask=bkg_mask)
     # bkg_mask /= 255.
     bkg_mask = np.invert(bkg_mask)
 
@@ -143,37 +152,120 @@ def poolTableDetectAndGetCoordinates(imgPath):
     # mask the blue balls
     blue_mask = cv2.inRange(hsv, low_blue, high_blue)
 
+    # mask the purple balls
+    purple_mask = cv2.inRange(hsv, low_purple, high_purple)
+    
+    # mask the orange balls
+    orange_mask = cv2.inRange(hsv, low_orange, high_orange)
+    
+    # mask the brown balls
+    brown_mask = cv2.inRange(hsv, low_brown, high_brown)
+
     # mask the cue ball
     white_mask = cv2.inRange(hsv, low_white, high_white)
-
+    #
     yellows = cv2.bitwise_and(objects, objects, mask=yellow_mask)
     reds = cv2.bitwise_and(objects, objects, mask=red_mask)
     blues = cv2.bitwise_and(objects, objects, mask=blue_mask)
+    purples = cv2.bitwise_and(objects, objects, mask=purple_mask)
     whites = cv2.bitwise_and(objects, objects, mask=white_mask)
-    cv2.imwrite('whites.jpg', whites)
+    oranges = cv2.bitwise_and(objects, objects, mask=orange_mask)
+    browns = cv2.bitwise_and(objects, objects, mask=brown_mask)
 
+    cv2.imwrite('whites.jpg', whites)
+    del whites
+    cv2.imwrite('purples.jpg', purples)
+    del purples
+    cv2.imwrite('oranges.jpg', oranges)
+    del oranges
+    cv2.imwrite('mask.jpg', bkg_mask)
+    cv2.imwrite('yellows.jpg', yellows)
+    del yellows
+    cv2.imwrite('reds.jpg', reds)
+    del reds
+    cv2.imwrite('blues.jpg', blues)
+    del blues
+    cv2.imwrite('browns.jpg', browns)
+    del browns
+    #
     # find the biggest cloud of 1's in the yellow mask
-    yellow_image = yellow_mask / 255.
-    red_image = red_mask / 255.
-    blue_image = blue_mask / 255.
+    yellow_image = yellow_mask# / 255.
+    del yellow_mask
+    red_image = red_mask# / 255.
+    del red_mask
+    blue_image = blue_mask# / 255.
+    del blue_mask
     white_image = white_mask / 255.
+    del white_mask
+    purple_image = purple_mask# / 255.
+    del purple_mask
+    orange_image = orange_mask# / 255.
+    del orange_mask
+    brown_image = brown_mask# / 255.
+    del brown_mask
     
     def findBiggestCloud(image):
         biggest_cloud = []
         biggest_count = 0
+        # components = np.where(image == 1)
+        # bwImage = cv2.cvtColor(image, cv2.COLOR_RGB2GRAY);
+        contours = cv2.findContours(image, cv2.RETR_CCOMP, cv2.CHAIN_APPROX_SIMPLE)[0]
+        centerx = 0
+        centery = 0
+
+        for contour in contours:
+            # Approximates rectangles
+            bound_rect = cv2.boundingRect(contour)
+            count = bound_rect[2] * bound_rect[3];
+            if count > biggest_count:
+                centerx = bound_rect[0] + bound_rect[2] / 2
+                centery = bound_rect[1] + bound_rect[3] / 2
+                biggest_count = count
+        return centerx, centery, biggest_count
+
+    def findBiggestAndSecondBiggestCloudFast(image):
+        biggest_count = 0
+        second_biggest_count = 0
+        contours = cv2.findContours(image, cv2.RETR_CCOMP, cv2.CHAIN_APPROX_SIMPLE)[0]
+        centerx = 0
+        centery = 0
+        second_centerx = 0
+        second_centery = 0
+
+        for contour in contours:
+            # Approximates rectangles
+            bound_rect = cv2.boundingRect(contour)
+            count = bound_rect[2] * bound_rect[3];
+            if count > biggest_count:
+                second_biggest_count = biggest_count
+                second_centerx = centerx
+                second_centery = centery
+                centerx = bound_rect[0] + bound_rect[2] / 2
+                centery = bound_rect[1] + bound_rect[3] / 2
+                biggest_count = count
+            elif count > second_biggest_count:
+                second_biggest_count = count
+                second_centerx = bound_rect[0] + bound_rect[2] / 2
+                second_centery = bound_rect[1] + bound_rect[3] / 2
+        return centerx, centery, biggest_count, second_centerx, second_centery, second_biggest_count
+
+    def findBiggestWhiteCloud(image):
+        biggest_cloud = []
+        biggest_count = 0
         components = np.where(image == 1)
-        while len(components[0]) > biggest_count:
-            loc = components
-            y = loc[0][0]
-            x = loc[1][0]
+
+        while len(components[0]) > 1000 and len(components[0]) > biggest_count:
+            y = components[0][0]
+            x = components[1][0]
+            
             count, cloud = flood_fill(image, y, x, 2)
             if count > biggest_count:
                 print count
                 biggest_count = count
                 biggest_cloud = cloud
+            del components
             components = np.where(image == 1)
 
-        # print biggest_cloud
         print biggest_count
 
         totalY=0.0
@@ -183,7 +275,7 @@ def poolTableDetectAndGetCoordinates(imgPath):
             totalX += biggest_cloud[i][1]
         ycoord = totalY / biggest_count
         xcoord = totalX / biggest_count
-        return xcoord, ycoord
+        return xcoord, ycoord, biggest_count
 
     def findBiggestAndSecondBiggestCloud(image):
         second_biggest_cloud = []
@@ -191,7 +283,7 @@ def poolTableDetectAndGetCoordinates(imgPath):
         biggest_cloud = []
         biggest_count = 0
         components = np.where(image == 1)
-        while len(components[0]) > second_biggest_count:
+        while len(components[0]) > 1000 and len(components[0]) > second_biggest_count:
             y = components[0][0]
             x = components[1][0]
             count, cloud = flood_fill(image, y, x, 2)
@@ -228,25 +320,52 @@ def poolTableDetectAndGetCoordinates(imgPath):
             sectotalX += second_biggest_cloud[i][1]
         secycoord = sectotalY / second_biggest_count
         secxcoord = sectotalX / second_biggest_count
-        return xcoord, ycoord, secxcoord, secycoord
+        return xcoord, ycoord, biggest_count, secxcoord, secycoord, second_biggest_count
     
-    xyel, yyel, xyel2, yyel2 = findBiggestAndSecondBiggestCloud(yellow_image)
-    cv2.circle(frame, (int(xyel), int(yyel)), 30, (0,255,64), -1)
-    cv2.circle(frame, (int(xyel2), int(yyel2)), 30, (0,255,64), -1)
-    xred, yred = findBiggestCloud(red_image)
-    cv2.circle(frame, (int(xred), int(yred)), 30, (0,255,64), -1)
-    xblue, yblue = findBiggestCloud(blue_image)
-    cv2.circle(frame, (int(xblue), int(yblue)), 30, (0,255,64), -1)
-    xwht, ywht = findBiggestCloud(white_image)
+    
+    xwht, ywht, whtcount = findBiggestWhiteCloud(white_image)
     cv2.circle(frame, (int(xwht), int(ywht)), 30, (255,0,255), -1)
+    # give list of points to predict next shot - first white ball, then next set of balls
+    listOfPointData = [(xwht, ywht)]
 
-    cv2.imwrite('mask.jpg', bkg_mask)
-    cv2.imwrite('img_bkg_mask.jpg', img_bkg_mask)
-    cv2.imwrite('yellows.jpg', yellows)
-    cv2.imwrite('reds.jpg', reds)
-    cv2.imwrite('blues.jpg', blues)
-    cv2.imwrite('whites.jpg', whites)
-    cv2.imwrite('frame.jpg', frame)
+    xyel, yyel, yelcount, xyel2, yyel2, yelcount2 = findBiggestAndSecondBiggestCloudFast(yellow_image)
+    thresholdCount = 1000
+    if yelcount > thresholdCount:
+        cv2.circle(frame, (int(xyel), int(yyel)), 30, (0,255,64), -1)
+        listOfPointData.append((xyel, yyel))
+
+    xblue, yblue, bluecount = findBiggestCloud(blue_image)
+    if bluecount > thresholdCount:
+        cv2.circle(frame, (int(xblue), int(yblue)), 30, (0,255,64), -1)
+        listOfPointData.append((xblue, yblue))
+
+    xred, yred, redcount = findBiggestCloud(red_image)
+    if redcount > thresholdCount:
+        cv2.circle(frame, (int(xred), int(yred)), 30, (0,255,64), -1)
+        listOfPointData.append((xred, yred))
+        
+    xpurple, ypurple, purplecount = findBiggestCloud(purple_image)
+    if purplecount > thresholdCount:
+        cv2.circle(frame, (int(xpurple), int(ypurple)), 30, (0,255,64), -1)
+        listOfPointData.append((xpurple, ypurple))
+
+    xorange, yorange, orangecount = findBiggestCloud(orange_image)
+    if orangecount > thresholdCount:
+        cv2.circle(frame, (int(xorange), int(yorange)), 30, (0,255,64), -1)
+        listOfPointData.append((xorange, yorange))
+        
+    xbrown, ybrown, browncount = findBiggestCloud(brown_image)
+    if browncount > thresholdCount:
+        cv2.circle(frame, (int(xbrown), int(ybrown)), 30, (0,255,64), -1)
+        listOfPointData.append((xbrown, ybrown))
+
+    if yelcount2 > thresholdCount:
+        cv2.circle(frame, (int(xyel2), int(yyel2)), 30, (0,255,64), -1)
+        listOfPointData.append((xyel2, yyel2))
+
+    #cv2.imwrite('frame.jpg', frame)
+
+    # send listOfPointData to Eddi's function
 
     return frame
 
@@ -257,3 +376,4 @@ def findAndDrawGiraffeBody(imgPath):
     printLogMsg("Running giraffe body detection...")
     # imgResult,confidence,bboxes = findAndDrawGiraffeBodyImpl(imgPath)    
     return imgResult,confidence,bboxes
+

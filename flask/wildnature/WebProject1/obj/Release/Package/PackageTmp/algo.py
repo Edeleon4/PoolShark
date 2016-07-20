@@ -97,7 +97,7 @@ def poolTableDetectAndGetCoordinates(imgPath):
             newedge = []
             for (x, y) in edge:
                 for (s, t) in ((x+1, y), (x-1, y), (x, y+1), (x, y-1)):
-                    if s < image.shape[0] and t < image.shape[1] and \
+                    if s < image.shape[0] and t < image.shape[1] and s >= 0 and t >= 0 and \
                 	    image[s, t] not in (BORDER_COLOR, value):
                         image[s, t] = value
                         points.append((s, t))
@@ -108,54 +108,193 @@ def poolTableDetectAndGetCoordinates(imgPath):
         return count, points
 
     # thresholds for different balls / background
+    low_white = np.array([30, 0, 210], dtype=np.uint8)
+    high_white = np.array([120, 40, 255], dtype=np.uint8)
+
     low_bkg = np.array([15, 40, 50], dtype=np.uint8)
     high_bkg = np.array([40, 190, 200], dtype=np.uint8)
 
-    lower_blue = np.array([110,50,50], dtype=np.uint8)
-    upper_blue = np.array([130,255,255], dtype=np.uint8)
+    low_blue = np.array([110,80,80], dtype=np.uint8)
+    high_blue = np.array([120,255,255], dtype=np.uint8)
 
-    low_yellow = np.array([20, 30, 30], dtype=np.uint8)
+    low_purple = np.array([110,0,0], dtype=np.uint8)
+    high_purple = np.array([150,100,100], dtype=np.uint8)
+
+    low_yellow = np.array([20, 150, 150], dtype=np.uint8)
     high_yellow = np.array([30, 255, 255], dtype=np.uint8)
 
+    low_red = np.array([160, 100, 100], dtype=np.uint8)
+    high_red = np.array([180, 255, 255], dtype=np.uint8)
+    
+    low_orange = np.array([5, 200, 110], dtype=np.uint8)
+    high_orange = np.array([15, 255, 255], dtype=np.uint8)
+    
+    low_brown = np.array([0, 90, 10], dtype=np.uint8)
+    high_brown = np.array([15, 120, 65], dtype=np.uint8)
 
     # mask out the background
-    mask = cv2.inRange(hsv, low_bkg, high_bkg)
-    mask = np.invert(mask)
+    bkg_mask = cv2.inRange(hsv, low_bkg, high_bkg)
+    # img_bkg_mask = cv2.bitwise_and(frame,frame, mask=bkg_mask)
+    # bkg_mask /= 255.
+    bkg_mask = np.invert(bkg_mask)
 
-    # Bitwise-AND mask and original image
-    objects = cv2.bitwise_and(frame,frame, mask= mask)
+    # Bitwise-AND bkg_mask and original image
+    objects = cv2.bitwise_and(frame,frame, mask=bkg_mask)
 
     hsv = cv2.cvtColor(objects, cv2.COLOR_BGR2HSV)
 
     # mask the yellow balls
-    mask = cv2.inRange(hsv, low_yellow, high_yellow)
+    yellow_mask = cv2.inRange(hsv, low_yellow, high_yellow)
+    
+    # mask the red balls
+    red_mask = cv2.inRange(hsv, low_red, high_red)
+    
+    # mask the blue balls
+    blue_mask = cv2.inRange(hsv, low_blue, high_blue)
 
-    yellows = cv2.bitwise_and(objects, objects, mask=mask)
+    # mask the purple balls
+    purple_mask = cv2.inRange(hsv, low_purple, high_purple)
+    
+    # mask the orange balls
+    orange_mask = cv2.inRange(hsv, low_orange, high_orange)
+    
+    # mask the brown balls
+    brown_mask = cv2.inRange(hsv, low_brown, high_brown)
+
+    # mask the cue ball
+    white_mask = cv2.inRange(hsv, low_white, high_white)
+
+    #yellows = cv2.bitwise_and(objects, objects, mask=yellow_mask)
+    #reds = cv2.bitwise_and(objects, objects, mask=red_mask)
+    #blues = cv2.bitwise_and(objects, objects, mask=blue_mask)
+    #purples = cv2.bitwise_and(objects, objects, mask=purple_mask)
+    #whites = cv2.bitwise_and(objects, objects, mask=white_mask)
+    #oranges = cv2.bitwise_and(objects, objects, mask=orange_mask)
+    #browns = cv2.bitwise_and(objects, objects, mask=brown_mask)
+
+    #cv2.imwrite('whites.jpg', whites)
+    #del whites
+    #cv2.imwrite('purples.jpg', purples)
+    #del purples
+    #cv2.imwrite('oranges.jpg', oranges)
+    #del oranges
+    #cv2.imwrite('mask.jpg', bkg_mask)
+    #cv2.imwrite('yellows.jpg', yellows)
+    #del yellows
+    #cv2.imwrite('reds.jpg', reds)
+    #del reds
+    #cv2.imwrite('blues.jpg', blues)
+    #del blues
+    #cv2.imwrite('browns.jpg', browns)
+    #del browns
 
     # find the biggest cloud of 1's in the yellow mask
-    biggest_cloud = []
-    biggest_count = 0
+    yellow_image = yellow_mask / 255.
+    del yellow_mask
+    red_image = red_mask / 255.
+    del red_mask
+    blue_image = blue_mask / 255.
+    del blue_mask
+    white_image = white_mask / 255.
+    del white_mask
+    purple_image = purple_mask / 255.
+    del purple_mask
+    orange_image = orange_mask / 255.
+    del orange_mask
+    brown_image = brown_mask / 255.
+    del brown_mask
+    
+    def findBiggestCloud(image):
+        biggest_cloud = []
+        biggest_count = 0
+        components = np.where(image == 1)
+        while len(components[0]) > 1000 and len(components[0]) > biggest_count:
+            y = components[0][0]
+            x = components[1][0]
+            count, cloud = flood_fill(image, y, x, 2)
+            if count > biggest_count:
+                print count
+                biggest_count = count
+                biggest_cloud = cloud
+            del components
+            components = np.where(image == 1)
 
-    image = mask / 255.
+        # print biggest_cloud
+        print biggest_count
 
-    while len(np.where(image == 1)[0]) > biggest_count:
-        loc = np.where(image == 1)
-        y = loc[0][0]
-        x = loc[1][0]
-        count, cloud = flood_fill(image, y, x, 2)
-        if count > biggest_count:
-            print count
-            biggest_count = count
-            biggest_cloud = cloud
+        totalY=0.0
+        totalX=0.0
+        for i in range (0,biggest_count):
+            totalY += biggest_cloud[i][0]
+            totalX += biggest_cloud[i][1]
+        ycoord = totalY / biggest_count
+        xcoord = totalX / biggest_count
+        return xcoord, ycoord
 
-    print biggest_cloud
-    print biggest_count
+    def findBiggestAndSecondBiggestCloud(image):
+        second_biggest_cloud = []
+        second_biggest_count = 0
+        biggest_cloud = []
+        biggest_count = 0
+        components = np.where(image == 1)
+        while len(components[0]) > 1000 and len(components[0]) > second_biggest_count:
+            y = components[0][0]
+            x = components[1][0]
+            count, cloud = flood_fill(image, y, x, 2)
+            if count > biggest_count:
+                print count
+                second_biggest_count = biggest_count
+                second_biggest_cloud = biggest_cloud
+                biggest_count = count
+                biggest_cloud = cloud
+            elif count > second_biggest_count:
+                print count
+                second_biggest_count = count
+                second_biggest_cloud = cloud
+            components = np.where(image == 1)
 
-    cv2.imwrite('mask.jpg', mask)
-    cv2.imwrite('yellows.jpg', yellows)
-    cv2.imwrite('frame.jpg', frame)
+        # print biggest_cloud
+        print biggest_count
+        # print second_biggest_cloud
+        print second_biggest_count
 
-    return
+        totalY=0.0
+        totalX=0.0
+        for i in range (0,biggest_count):
+            totalY += biggest_cloud[i][0]
+            totalX += biggest_cloud[i][1]
+        ycoord = totalY / biggest_count
+        xcoord = totalX / biggest_count
+
+        
+        sectotalY=0.0
+        sectotalX=0.0
+        for i in range (0,second_biggest_count):
+            sectotalY += second_biggest_cloud[i][0]
+            sectotalX += second_biggest_cloud[i][1]
+        secycoord = sectotalY / second_biggest_count
+        secxcoord = sectotalX / second_biggest_count
+        return xcoord, ycoord, secxcoord, secycoord
+    
+    xyel, yyel, xyel2, yyel2 = findBiggestAndSecondBiggestCloud(yellow_image)
+    cv2.circle(frame, (int(xyel), int(yyel)), 30, (0,255,64), -1)
+    cv2.circle(frame, (int(xyel2), int(yyel2)), 30, (0,255,64), -1)
+    xred, yred = findBiggestCloud(red_image)
+    cv2.circle(frame, (int(xred), int(yred)), 30, (0,255,64), -1)
+    xblue, yblue = findBiggestCloud(blue_image)
+    cv2.circle(frame, (int(xblue), int(yblue)), 30, (0,255,64), -1)
+    xpurple, ypurple = findBiggestCloud(purple_image)
+    cv2.circle(frame, (int(xpurple), int(ypurple)), 30, (0,255,64), -1)
+    xorange, yorange = findBiggestCloud(orange_image)
+    cv2.circle(frame, (int(xorange), int(yorange)), 30, (0,255,64), -1)
+    xbrown, ybrown = findBiggestCloud(brown_image)
+    cv2.circle(frame, (int(xbrown), int(ybrown)), 30, (0,255,64), -1)
+    xwht, ywht = findBiggestCloud(white_image)
+    cv2.circle(frame, (int(xwht), int(ywht)), 30, (255,0,255), -1)
+
+    #cv2.imwrite('frame.jpg', frame)
+
+    return frame
 
 #####################################
 # ENTRY FUNCTIONS
@@ -164,21 +303,3 @@ def findAndDrawGiraffeBody(imgPath):
     printLogMsg("Running giraffe body detection...")
     # imgResult,confidence,bboxes = findAndDrawGiraffeBodyImpl(imgPath)    
     return imgResult,confidence,bboxes
-
-
-#find faces using Project Oxford
-#PLEASE DO NOT MODIFY THIS FUNCTION
-def findAndDrawFaces(imgPath, subscriptionKey = projectOxfordKey):
-    printLogMsg("Calling project Oxford Face API...")
-    jsonString = "[]"
-    time.sleep(1)
-    #jsonString = callFaceDetectionAPI(imgPath, subscriptionKey)
-    #jsonString = '[{"faceId":"aa593c2e-f82e-4325-b694-90cd1bc86469","faceRectangle":{"top":172,"left":275,"width":164,"height":164},"faceLandmarks":{"pupilLeft":{"x":323.7,"y":218.1},"pupilRight":{"x":392.9,"y":213.2},"noseTip":{"x":337.6,"y":259.7},"mouthLeft":{"x":333.3,"y":295.5},"mouthRight":{"x":396.8,"y":290.6},"eyebrowLeftOuter":{"x":302.7,"y":200.1},"eyebrowLeftInner":{"x":333.4,"y":200.0},"eyeLeftOuter":{"x":314.0,"y":219.1},"eyeLeftTop":{"x":323.0,"y":213.3},"eyeLeftBottom":{"x":323.8,"y":223.4},"eyeLeftInner":{"x":335.1,"y":218.2},"eyebrowRightInner":{"x":366.4,"y":196.2},"eyebrowRightOuter":{"x":426.1,"y":198.6},"eyeRightInner":{"x":382.4,"y":214.5},"eyeRightTop":{"x":393.8,"y":208.9},"eyeRightBottom":{"x":394.4,"y":218.0},"eyeRightOuter":{"x":404.3,"y":212.7},"noseRootLeft":{"x":341.4,"y":218.0},"noseRootRight":{"x":362.5,"y":217.3},"noseLeftAlarTop":{"x":331.9,"y":246.7},"noseRightAlarTop":{"x":363.4,"y":246.5},"noseLeftAlarOutTip":{"x":328.5,"y":261.1},"noseRightAlarOutTip":{"x":374.9,"y":262.4},"upperLipTop":{"x":352.0,"y":289.1},"upperLipBottom":{"x":351.7,"y":297.1},"underLipTop":{"x":354.0,"y":300.1},"underLipBottom":{"x":354.5,"y":309.4}},"attributes":{"headPose":{"pitch":0.0,"roll":-0.1,"yaw":-30.9},"gender":"male","age":40}}]'
-    
-    printLogMsg("Drawing detected faces...")
-    img = Image.open(imgPath)
-    faceInfos = parseFaceJson(jsonString)
-    drawFaceLandmarks(img, faceInfos)
-    img = imconvertPil2Cv(img)
-    text = "nrFacesFound={0}".format(len(faceInfos))
-    return img,text

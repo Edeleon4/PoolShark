@@ -100,8 +100,7 @@ def upload():
         printLogMsg("Uploading file to local directory...")
         imgFilename, imgPath = saveRequestFile(file)
         printLogMsg("Calling entry CV function...")
-        img = imread(imgPath)
-        poolTableDetectAndGetCoordinates(imgPath)
+        img = poolTableDetectAndGetCoordinates(imgPath)
         os.remove(imgPath)
 
         printLogMsg("Generating result site...")
