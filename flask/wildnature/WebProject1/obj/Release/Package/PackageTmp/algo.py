@@ -59,12 +59,10 @@ def resetLog():
     if len(logMsgs) > 100000:
         del logMsgs[:]
 
-
-
 #####################################
 # CV IMPLEMENTATION
 #####################################
-def findAndDrawGiraffeBodyImpl(imgPath):
+def poolTableDetectAndGetCoordinates(imgPath):
     ############
     # Parameters
     ############
@@ -78,72 +76,86 @@ def findAndDrawGiraffeBodyImpl(imgPath):
     ############
     # Main
     ############
-    #init
-    winSize = (targetWidth,targetHeight) #Detection window size. Align to block size and block stride.
-    minRelHeight = minRelWidth * targetHeight / targetWidth
-    learner = loadFromPickle(learnerPath)
-    hogObj = cv2.HOGDescriptor(winSize,blockSize,blockStride,cellSize,nbins,derivAperture,winSigma,
-                               histogramNormType,L2HysThreshold,gammaCorrection,nlevels) #, signedGradients)
-    hogObj.setSVMDetector(learner.coef_[0])
+    frame = imread(imgPath)
+    h,w,c = frame.shape
+    print frame.shape
 
-    #load image
-    img = imread(imgPath)
-    imgFilename = os.path.basename(imgPath)
-    imresizeScale = 1.0 * imresizeWidth / imWidth(img)
-    if imresizeScale > 1:  #never upscale image
-        imresizeScale = 1.0
-    img = imresize(img, imresizeScale)
-    imgWidth, imgHeight = imWidthHeight(img)
+    # Convert BGR to HSV
+    hsv = cv2.cvtColor(frame, cv2.COLOR_BGR2HSV)
 
-    #run detection and reject small detections
-    tStart = datetime.datetime.now()
-    detections, scores = hogObj.detectMultiScale(img, **hogDetectParams)
-    printLogMsg("Found {0} objects in image {1} (duration = {2} sec).".format(len(detections), imgFilename, (datetime.datetime.now() - tStart).total_seconds()))
-    bboxes = [Bbox(x, y, x + w, y + h) for (x, y, w, h) in detections]
-    keepIndices = [i for i,bbox in enumerate(bboxes) if bbox.width()> minRelWidth * imgWidth and bbox.height()> minRelHeight * imgHeight]
-    bboxes = [bboxes[i] for i in keepIndices]
-    scores = [scores[i] for i in keepIndices]
-    printLogMsg("{0} detections left after removing boxes that are too small.".format(len(bboxes)))
+    BORDER_COLOR = 0
+    def flood_fill(image, x, y, value):
+        count = 1
+        points = [(x, y)]
+        "Flood fill on a region of non-BORDER_COLOR pixels."
+        if x >= image.shape[0] or y >= image.shape[1] or image[x,y] == BORDER_COLOR:
+            return None, None
+        edge = [(x, y)]
+        image[x, y] = value
 
-    #only keep the highest scoring detection
-    if len(bboxes) > 1:
-        maxVal,indices = pbMax(scores)
-        bboxes = [bboxes[indices[0]]]
-        scores = [scores[indices[0]]]
+        while edge:
+            newedge = []
+            for (x, y) in edge:
+                for (s, t) in ((x+1, y), (x-1, y), (x, y+1), (x, y-1)):
+                    if s < image.shape[0] and t < image.shape[1] and \
+                	    image[s, t] not in (BORDER_COLOR, value):
+                        image[s, t] = value
+                        points.append((s, t))
+                        count += 1
+                        newedge.append((s, t))
+            edge = newedge
 
-    if len(bboxes) > 0:
-        #classfier was trained on enlarged bboxes. need to downsize detection rectangle.
-        for i in range(len(bboxes)):
-            bbox = bboxes[i]
-            centerPt = bbox.center()
-            newWidth = bbox.width() / (bboxGrowScale)
-            newHeight = bbox.height() / (bboxGrowScale)
-            left   = centerPt[0] - 0.5 * newWidth
-            right  = centerPt[0] + 0.5 * newWidth
-            top    = centerPt[1] - 0.5 * newHeight
-            bottom = centerPt[1] + 0.5 * newHeight
-            bboxes[i] = Bbox(left, top, right, bottom)
-        bboxes = [bbox.crop(imWidth, imHeight) for bbox in bboxes]
-    else:
-        bboxes = []
+        return count, points
 
-    #draw debug info
-    if boVisualizeDetections:
-        thickness = int(ceil((imgHeight + imgWidth) / 700.0))
-        for bbox in bboxes:
-            cv2.rectangle(img, tuple(bbox.leftTop()), tuple(bbox.rightBottom()), (255, 0, 0), 4 * thickness)
+    # thresholds for different balls / background
+    low_bkg = np.array([15, 40, 50], dtype=np.uint8)
+    high_bkg = np.array([40, 190, 200], dtype=np.uint8)
 
-    #detection result
-    if len(bboxes) > 0:
-        bboxes = [bbox.scale(1.0/imresizeScale) for bbox in bboxes]
-        bboxes = [bbox.crop(imWidth(imgPath), imHeight(imgPath)) for bbox in bboxes]
-        score = numToString(scores[0][0].astype('float64'), 4)
-    else:
-        score = -1
-    return img,score,bboxes
+    lower_blue = np.array([110,50,50], dtype=np.uint8)
+    upper_blue = np.array([130,255,255], dtype=np.uint8)
+
+    low_yellow = np.array([20, 30, 30], dtype=np.uint8)
+    high_yellow = np.array([30, 255, 255], dtype=np.uint8)
 
 
+    # mask out the background
+    mask = cv2.inRange(hsv, low_bkg, high_bkg)
+    mask = np.invert(mask)
 
+    # Bitwise-AND mask and original image
+    objects = cv2.bitwise_and(frame,frame, mask= mask)
+
+    hsv = cv2.cvtColor(objects, cv2.COLOR_BGR2HSV)
+
+    # mask the yellow balls
+    mask = cv2.inRange(hsv, low_yellow, high_yellow)
+
+    yellows = cv2.bitwise_and(objects, objects, mask=mask)
+
+    # find the biggest cloud of 1's in the yellow mask
+    biggest_cloud = []
+    biggest_count = 0
+
+    image = mask / 255.
+
+    while len(np.where(image == 1)[0]) > biggest_count:
+        loc = np.where(image == 1)
+        y = loc[0][0]
+        x = loc[1][0]
+        count, cloud = flood_fill(image, y, x, 2)
+        if count > biggest_count:
+            print count
+            biggest_count = count
+            biggest_cloud = cloud
+
+    print biggest_cloud
+    print biggest_count
+
+    cv2.imwrite('mask.jpg', mask)
+    cv2.imwrite('yellows.jpg', yellows)
+    cv2.imwrite('frame.jpg', frame)
+
+    return
 
 #####################################
 # ENTRY FUNCTIONS

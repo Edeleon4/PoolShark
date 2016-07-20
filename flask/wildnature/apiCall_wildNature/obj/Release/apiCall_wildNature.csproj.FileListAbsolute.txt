@@ -1,0 +1,1 @@
+C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\apiCall_wildNature\bin\Release\apiCall_wildNature.exe.config

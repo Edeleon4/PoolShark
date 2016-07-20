@@ -1,11 +1,11 @@
 ﻿<!doctype html>
-<title>Wild Nature Institute</title>
-<h1>Detected giraffe body: <br> <img src="{{ url_for('send_file', filename=filename) }}" width="400"> <br /> </h1>
+<title>Azure ML Pool</title>
+<h1>Detected best pool shot: <br> <img src="{{ url_for('send_file', filename=filename) }}" width="400"> <br /> </h1>
 <h3>Detection result:</h3>
 {{ text }}
 <br><br>
 <h3>Remark</h3>
-Note that this work currently assumes each image has at least one giraffe in it, and that the giraffe is facing right.
+Note that this work currently assumes the entire pool table is in the image.
 <br><br>
 <form style="display: inline" action="{{ url_for('index') }}" method="get">
     <button> Upload another photo</button>

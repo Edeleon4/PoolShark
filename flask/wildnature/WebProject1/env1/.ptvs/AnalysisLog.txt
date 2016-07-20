@@ -5485,3 +5485,439 @@ ImportError: DLL load failed: The specified module could not be found.
 2016-07-19T15:22:18: Saving group "C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\pip"
 2016-07-19T15:22:20: End of group "C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\pip"
 2016-07-19T15:22:21: Deleting 0 files
+
+2016-07-19T20:14:22: Start analysis
+2016-07-19T20:14:22: [WARNING] Library was set explicitly - skipping path detection
+2016-07-19T20:14:22: IncludeModulesFromModulePath = win32com
+2016-07-19T20:14:23: Deleting 207 files
+2016-07-19T20:14:23: Scraping numpy.core.multiarray
+2016-07-19T20:14:23: Command: C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Scripts\python.exe "C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Extensions\Microsoft\Python Tools for Visual Studio\2.2\ExtensionScraper.py" scrape numpy.core.multiarray C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\.ptvs\numpy\numpy.core.multiarray
+2016-07-19T20:14:24: Scraping numpy.core.multiarray_tests
+2016-07-19T20:14:24: Command: C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Scripts\python.exe "C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Extensions\Microsoft\Python Tools for Visual Studio\2.2\ExtensionScraper.py" scrape numpy.core.multiarray_tests C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\.ptvs\numpy\numpy.core.multiarray_tests
+2016-07-19T20:14:24: Scraping numpy.core.operand_flag_tests
+2016-07-19T20:14:24: Command: C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Scripts\python.exe "C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Extensions\Microsoft\Python Tools for Visual Studio\2.2\ExtensionScraper.py" scrape numpy.core.operand_flag_tests C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\.ptvs\numpy\numpy.core.operand_flag_tests
+2016-07-19T20:14:24: Scraping numpy.core.struct_ufunc_test
+2016-07-19T20:14:24: Command: C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Scripts\python.exe "C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Extensions\Microsoft\Python Tools for Visual Studio\2.2\ExtensionScraper.py" scrape numpy.core.struct_ufunc_test C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\.ptvs\numpy\numpy.core.struct_ufunc_test
+2016-07-19T20:14:24: Scraping numpy.core.test_rational
+2016-07-19T20:14:24: Command: C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Scripts\python.exe "C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Extensions\Microsoft\Python Tools for Visual Studio\2.2\ExtensionScraper.py" scrape numpy.core.test_rational C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\.ptvs\numpy\numpy.core.test_rational
+2016-07-19T20:14:24: Scraping numpy.core.umath
+2016-07-19T20:14:24: Command: C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Scripts\python.exe "C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Extensions\Microsoft\Python Tools for Visual Studio\2.2\ExtensionScraper.py" scrape numpy.core.umath C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\.ptvs\numpy\numpy.core.umath
+2016-07-19T20:14:24: Scraping numpy.core.umath_tests
+2016-07-19T20:14:24: Command: C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Scripts\python.exe "C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Extensions\Microsoft\Python Tools for Visual Studio\2.2\ExtensionScraper.py" scrape numpy.core.umath_tests C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\.ptvs\numpy\numpy.core.umath_tests
+2016-07-19T20:14:25: Scraping numpy.core._dummy
+2016-07-19T20:14:25: Command: C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Scripts\python.exe "C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Extensions\Microsoft\Python Tools for Visual Studio\2.2\ExtensionScraper.py" scrape numpy.core._dummy C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\.ptvs\numpy\numpy.core._dummy
+2016-07-19T20:14:25: Scraping numpy.fft.fftpack_lite
+2016-07-19T20:14:25: Command: C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Scripts\python.exe "C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Extensions\Microsoft\Python Tools for Visual Studio\2.2\ExtensionScraper.py" scrape numpy.fft.fftpack_lite C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\.ptvs\numpy\numpy.fft.fftpack_lite
+2016-07-19T20:14:25: Scraping numpy.linalg.lapack_lite
+2016-07-19T20:14:25: Command: C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Scripts\python.exe "C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Extensions\Microsoft\Python Tools for Visual Studio\2.2\ExtensionScraper.py" scrape numpy.linalg.lapack_lite C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\.ptvs\numpy\numpy.linalg.lapack_lite
+2016-07-19T20:14:25: Scraping numpy.linalg._umath_linalg
+2016-07-19T20:14:25: Command: C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Scripts\python.exe "C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Extensions\Microsoft\Python Tools for Visual Studio\2.2\ExtensionScraper.py" scrape numpy.linalg._umath_linalg C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\.ptvs\numpy\numpy.linalg._umath_linalg
+2016-07-19T20:14:25: Scraping numpy.random.mtrand
+2016-07-19T20:14:25: Command: C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Scripts\python.exe "C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Extensions\Microsoft\Python Tools for Visual Studio\2.2\ExtensionScraper.py" scrape numpy.random.mtrand C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\.ptvs\numpy\numpy.random.mtrand
+2016-07-19T20:14:26: Scraped 12 files
+2016-07-19T20:14:26: astropy.CallDepth = 0
+2016-07-19T20:14:26: matplotlib.CallDepth = 3
+2016-07-19T20:14:26: pandas.CallDepth = 0
+2016-07-19T20:14:26: sympy.CallDepth = 0
+2016-07-19T20:14:26: Start group "C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy" with 195 files
+2016-07-19T20:14:27: Parsing "numpy.add_newdocs" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\add_newdocs.py")
+2016-07-19T20:14:27: Parsing "numpy.ctypeslib" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\ctypeslib.py")
+2016-07-19T20:14:27: Parsing "numpy.dual" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\dual.py")
+2016-07-19T20:14:27: Parsing "numpy.matlib" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\matlib.py")
+2016-07-19T20:14:27: Parsing "numpy.setup" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\setup.py")
+2016-07-19T20:14:27: Parsing "numpy.version" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\version.py")
+2016-07-19T20:14:27: Parsing "numpy._import_tools" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\_import_tools.py")
+2016-07-19T20:14:27: Parsing "numpy.__config__" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\__config__.py")
+2016-07-19T20:14:27: Parsing "numpy" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\__init__.py")
+2016-07-19T20:14:27: Parsing "numpy.compat.py3k" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\compat\py3k.py")
+2016-07-19T20:14:27: Parsing "numpy.compat.setup" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\compat\setup.py")
+2016-07-19T20:14:27: Parsing "numpy.compat._inspect" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\compat\_inspect.py")
+2016-07-19T20:14:27: Parsing "numpy.compat" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\compat\__init__.py")
+2016-07-19T20:14:27: Parsing "numpy.core.arrayprint" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\core\arrayprint.py")
+2016-07-19T20:14:27: Parsing "numpy.core.cversions" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\core\cversions.py")
+2016-07-19T20:14:27: Parsing "numpy.core.defchararray" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\core\defchararray.py")
+2016-07-19T20:14:27: Parsing "numpy.core.fromnumeric" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\core\fromnumeric.py")
+2016-07-19T20:14:27: Parsing "numpy.core.function_base" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\core\function_base.py")
+2016-07-19T20:14:27: Parsing "numpy.core.generate_numpy_api" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\core\generate_numpy_api.py")
+2016-07-19T20:14:27: Parsing "numpy.core.getlimits" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\core\getlimits.py")
+2016-07-19T20:14:27: Parsing "numpy.core.info" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\core\info.py")
+2016-07-19T20:14:27: Parsing "numpy.core.machar" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\core\machar.py")
+2016-07-19T20:14:27: Parsing "numpy.core.memmap" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\core\memmap.py")
+2016-07-19T20:14:27: Parsing "numpy.core.numeric" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\core\numeric.py")
+2016-07-19T20:14:27: Parsing "numpy.core.numerictypes" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\core\numerictypes.py")
+2016-07-19T20:14:27: Parsing "numpy.core.records" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\core\records.py")
+2016-07-19T20:14:27: Parsing "numpy.core.setup" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\core\setup.py")
+2016-07-19T20:14:27: Parsing "numpy.core.setup_common" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\core\setup_common.py")
+2016-07-19T20:14:27: Parsing "numpy.core.shape_base" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\core\shape_base.py")
+2016-07-19T20:14:27: Parsing "numpy.core._internal" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\core\_internal.py")
+2016-07-19T20:14:27: Parsing "numpy.core._methods" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\core\_methods.py")
+2016-07-19T20:14:27: Parsing "numpy.core" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\core\__init__.py")
+2016-07-19T20:14:27: Parsing "numpy.distutils.ccompiler" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\distutils\ccompiler.py")
+2016-07-19T20:14:27: Parsing "numpy.distutils.compat" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\distutils\compat.py")
+2016-07-19T20:14:27: Parsing "numpy.distutils.conv_template" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\distutils\conv_template.py")
+2016-07-19T20:14:27: Parsing "numpy.distutils.core" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\distutils\core.py")
+2016-07-19T20:14:27: Parsing "numpy.distutils.cpuinfo" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\distutils\cpuinfo.py")
+2016-07-19T20:14:27: Parsing "numpy.distutils.environment" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\distutils\environment.py")
+2016-07-19T20:14:27: Parsing "numpy.distutils.exec_command" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\distutils\exec_command.py")
+2016-07-19T20:14:27: Parsing "numpy.distutils.extension" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\distutils\extension.py")
+2016-07-19T20:14:27: Parsing "numpy.distutils.from_template" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\distutils\from_template.py")
+2016-07-19T20:14:27: Parsing "numpy.distutils.info" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\distutils\info.py")
+2016-07-19T20:14:27: Parsing "numpy.distutils.intelccompiler" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\distutils\intelccompiler.py")
+2016-07-19T20:14:27: Parsing "numpy.distutils.lib2def" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\distutils\lib2def.py")
+2016-07-19T20:14:27: Parsing "numpy.distutils.line_endings" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\distutils\line_endings.py")
+2016-07-19T20:14:27: Parsing "numpy.distutils.log" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\distutils\log.py")
+2016-07-19T20:14:27: Parsing "numpy.distutils.mingw32ccompiler" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\distutils\mingw32ccompiler.py")
+2016-07-19T20:14:27: Parsing "numpy.distutils.misc_util" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\distutils\misc_util.py")
+2016-07-19T20:14:27: Parsing "numpy.distutils.msvc9compiler" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\distutils\msvc9compiler.py")
+2016-07-19T20:14:27: Parsing "numpy.distutils.msvccompiler" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\distutils\msvccompiler.py")
+2016-07-19T20:14:27: Parsing "numpy.distutils.npy_pkg_config" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\distutils\npy_pkg_config.py")
+2016-07-19T20:14:27: Parsing "numpy.distutils.numpy_distribution" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\distutils\numpy_distribution.py")
+2016-07-19T20:14:27: Parsing "numpy.distutils.pathccompiler" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\distutils\pathccompiler.py")
+2016-07-19T20:14:27: Parsing "numpy.distutils.setup" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\distutils\setup.py")
+2016-07-19T20:14:27: Parsing "numpy.distutils.system_info" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\distutils\system_info.py")
+2016-07-19T20:14:27: Parsing "numpy.distutils.unixccompiler" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\distutils\unixccompiler.py")
+2016-07-19T20:14:27: Parsing "numpy.distutils.__config__" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\distutils\__config__.py")
+2016-07-19T20:14:27: Parsing "numpy.distutils" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\distutils\__init__.py")
+2016-07-19T20:14:27: Parsing "numpy.distutils.__version__" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\distutils\__version__.py")
+2016-07-19T20:14:27: Parsing "numpy.distutils.command.autodist" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\distutils\command\autodist.py")
+2016-07-19T20:14:27: Parsing "numpy.distutils.command.bdist_rpm" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\distutils\command\bdist_rpm.py")
+2016-07-19T20:14:27: Parsing "numpy.distutils.command.build" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\distutils\command\build.py")
+2016-07-19T20:14:27: Parsing "numpy.distutils.command.build_clib" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\distutils\command\build_clib.py")
+2016-07-19T20:14:27: Parsing "numpy.distutils.command.build_ext" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\distutils\command\build_ext.py")
+2016-07-19T20:14:27: Parsing "numpy.distutils.command.build_py" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\distutils\command\build_py.py")
+2016-07-19T20:14:27: Parsing "numpy.distutils.command.build_scripts" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\distutils\command\build_scripts.py")
+2016-07-19T20:14:27: Parsing "numpy.distutils.command.build_src" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\distutils\command\build_src.py")
+2016-07-19T20:14:27: Parsing "numpy.distutils.command.config" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\distutils\command\config.py")
+2016-07-19T20:14:27: Parsing "numpy.distutils.command.config_compiler" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\distutils\command\config_compiler.py")
+2016-07-19T20:14:27: Parsing "numpy.distutils.command.develop" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\distutils\command\develop.py")
+2016-07-19T20:14:27: Parsing "numpy.distutils.command.egg_info" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\distutils\command\egg_info.py")
+2016-07-19T20:14:27: Parsing "numpy.distutils.command.install" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\distutils\command\install.py")
+2016-07-19T20:14:27: Parsing "numpy.distutils.command.install_clib" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\distutils\command\install_clib.py")
+2016-07-19T20:14:27: Parsing "numpy.distutils.command.install_data" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\distutils\command\install_data.py")
+2016-07-19T20:14:27: Parsing "numpy.distutils.command.install_headers" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\distutils\command\install_headers.py")
+2016-07-19T20:14:27: Parsing "numpy.distutils.command.sdist" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\distutils\command\sdist.py")
+2016-07-19T20:14:27: Parsing "numpy.distutils.command" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\distutils\command\__init__.py")
+2016-07-19T20:14:27: Parsing "numpy.distutils.fcompiler.absoft" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\distutils\fcompiler\absoft.py")
+2016-07-19T20:14:28: Parsing "numpy.distutils.fcompiler.compaq" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\distutils\fcompiler\compaq.py")
+2016-07-19T20:14:28: Parsing "numpy.distutils.fcompiler.g95" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\distutils\fcompiler\g95.py")
+2016-07-19T20:14:28: Parsing "numpy.distutils.fcompiler.gnu" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\distutils\fcompiler\gnu.py")
+2016-07-19T20:14:28: Parsing "numpy.distutils.fcompiler.hpux" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\distutils\fcompiler\hpux.py")
+2016-07-19T20:14:28: Parsing "numpy.distutils.fcompiler.ibm" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\distutils\fcompiler\ibm.py")
+2016-07-19T20:14:28: Parsing "numpy.distutils.fcompiler.intel" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\distutils\fcompiler\intel.py")
+2016-07-19T20:14:28: Parsing "numpy.distutils.fcompiler.lahey" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\distutils\fcompiler\lahey.py")
+2016-07-19T20:14:28: Parsing "numpy.distutils.fcompiler.mips" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\distutils\fcompiler\mips.py")
+2016-07-19T20:14:28: Parsing "numpy.distutils.fcompiler.nag" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\distutils\fcompiler\nag.py")
+2016-07-19T20:14:28: Parsing "numpy.distutils.fcompiler.none" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\distutils\fcompiler\none.py")
+2016-07-19T20:14:28: Parsing "numpy.distutils.fcompiler.pathf95" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\distutils\fcompiler\pathf95.py")
+2016-07-19T20:14:28: Parsing "numpy.distutils.fcompiler.pg" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\distutils\fcompiler\pg.py")
+2016-07-19T20:14:28: Parsing "numpy.distutils.fcompiler.sun" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\distutils\fcompiler\sun.py")
+2016-07-19T20:14:28: Parsing "numpy.distutils.fcompiler.vast" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\distutils\fcompiler\vast.py")
+2016-07-19T20:14:28: Parsing "numpy.distutils.fcompiler" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\distutils\fcompiler\__init__.py")
+2016-07-19T20:14:28: Parsing "numpy.doc.basics" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\doc\basics.py")
+2016-07-19T20:14:28: Parsing "numpy.doc.broadcasting" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\doc\broadcasting.py")
+2016-07-19T20:14:28: Parsing "numpy.doc.byteswapping" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\doc\byteswapping.py")
+2016-07-19T20:14:28: Parsing "numpy.doc.constants" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\doc\constants.py")
+2016-07-19T20:14:28: Parsing "numpy.doc.creation" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\doc\creation.py")
+2016-07-19T20:14:28: Parsing "numpy.doc.glossary" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\doc\glossary.py")
+2016-07-19T20:14:28: Parsing "numpy.doc.howtofind" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\doc\howtofind.py")
+2016-07-19T20:14:28: Parsing "numpy.doc.indexing" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\doc\indexing.py")
+2016-07-19T20:14:28: Parsing "numpy.doc.internals" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\doc\internals.py")
+2016-07-19T20:14:28: Parsing "numpy.doc.io" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\doc\io.py")
+2016-07-19T20:14:28: Parsing "numpy.doc.jargon" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\doc\jargon.py")
+2016-07-19T20:14:28: Parsing "numpy.doc.methods_vs_functions" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\doc\methods_vs_functions.py")
+2016-07-19T20:14:28: Parsing "numpy.doc.misc" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\doc\misc.py")
+2016-07-19T20:14:28: Parsing "numpy.doc.performance" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\doc\performance.py")
+2016-07-19T20:14:28: Parsing "numpy.doc.structured_arrays" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\doc\structured_arrays.py")
+2016-07-19T20:14:28: Parsing "numpy.doc.subclassing" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\doc\subclassing.py")
+2016-07-19T20:14:28: Parsing "numpy.doc.ufuncs" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\doc\ufuncs.py")
+2016-07-19T20:14:28: Parsing "numpy.doc" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\doc\__init__.py")
+2016-07-19T20:14:28: Parsing "numpy.f2py.auxfuncs" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\f2py\auxfuncs.py")
+2016-07-19T20:14:28: Parsing "numpy.f2py.capi_maps" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\f2py\capi_maps.py")
+2016-07-19T20:14:28: Parsing "numpy.f2py.cb_rules" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\f2py\cb_rules.py")
+2016-07-19T20:14:28: Parsing "numpy.f2py.cfuncs" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\f2py\cfuncs.py")
+2016-07-19T20:14:28: Parsing "numpy.f2py.common_rules" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\f2py\common_rules.py")
+2016-07-19T20:14:28: Parsing "numpy.f2py.crackfortran" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\f2py\crackfortran.py")
+2016-07-19T20:14:28: Parsing "numpy.f2py.diagnose" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\f2py\diagnose.py")
+2016-07-19T20:14:28: Parsing "numpy.f2py.f2py2e" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\f2py\f2py2e.py")
+2016-07-19T20:14:28: Parsing "numpy.f2py.f2py_testing" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\f2py\f2py_testing.py")
+2016-07-19T20:14:28: Parsing "numpy.f2py.f90mod_rules" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\f2py\f90mod_rules.py")
+2016-07-19T20:14:28: Parsing "numpy.f2py.func2subr" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\f2py\func2subr.py")
+2016-07-19T20:14:28: Parsing "numpy.f2py.info" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\f2py\info.py")
+2016-07-19T20:14:28: Parsing "numpy.f2py.rules" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\f2py\rules.py")
+2016-07-19T20:14:28: Parsing "numpy.f2py.setup" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\f2py\setup.py")
+2016-07-19T20:14:28: Parsing "numpy.f2py.use_rules" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\f2py\use_rules.py")
+2016-07-19T20:14:28: Parsing "numpy.f2py" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\f2py\__init__.py")
+2016-07-19T20:14:28: Parsing "numpy.f2py.__main__" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\f2py\__main__.py")
+2016-07-19T20:14:28: Parsing "numpy.f2py.__version__" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\f2py\__version__.py")
+2016-07-19T20:14:28: Parsing "numpy.fft.fftpack" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\fft\fftpack.py")
+2016-07-19T20:14:28: Parsing "numpy.fft.helper" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\fft\helper.py")
+2016-07-19T20:14:28: Parsing "numpy.fft.info" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\fft\info.py")
+2016-07-19T20:14:28: Parsing "numpy.fft.setup" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\fft\setup.py")
+2016-07-19T20:14:28: Parsing "numpy.fft" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\fft\__init__.py")
+2016-07-19T20:14:28: Parsing "numpy.lib.arraypad" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\lib\arraypad.py")
+2016-07-19T20:14:28: Parsing "numpy.lib.arraysetops" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\lib\arraysetops.py")
+2016-07-19T20:14:28: Parsing "numpy.lib.arrayterator" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\lib\arrayterator.py")
+2016-07-19T20:14:28: Parsing "numpy.lib.financial" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\lib\financial.py")
+2016-07-19T20:14:28: Parsing "numpy.lib.format" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\lib\format.py")
+2016-07-19T20:14:28: Parsing "numpy.lib.function_base" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\lib\function_base.py")
+2016-07-19T20:14:28: Parsing "numpy.lib.index_tricks" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\lib\index_tricks.py")
+2016-07-19T20:14:28: Parsing "numpy.lib.info" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\lib\info.py")
+2016-07-19T20:14:28: Parsing "numpy.lib.nanfunctions" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\lib\nanfunctions.py")
+2016-07-19T20:14:28: Parsing "numpy.lib.npyio" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\lib\npyio.py")
+2016-07-19T20:14:28: Parsing "numpy.lib.polynomial" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\lib\polynomial.py")
+2016-07-19T20:14:28: Parsing "numpy.lib.recfunctions" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\lib\recfunctions.py")
+2016-07-19T20:14:28: Parsing "numpy.lib.scimath" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\lib\scimath.py")
+2016-07-19T20:14:28: Parsing "numpy.lib.setup" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\lib\setup.py")
+2016-07-19T20:14:28: Parsing "numpy.lib.shape_base" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\lib\shape_base.py")
+2016-07-19T20:14:28: Parsing "numpy.lib.stride_tricks" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\lib\stride_tricks.py")
+2016-07-19T20:14:28: Parsing "numpy.lib.twodim_base" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\lib\twodim_base.py")
+2016-07-19T20:14:28: Parsing "numpy.lib.type_check" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\lib\type_check.py")
+2016-07-19T20:14:28: Parsing "numpy.lib.ufunclike" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\lib\ufunclike.py")
+2016-07-19T20:14:28: Parsing "numpy.lib.user_array" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\lib\user_array.py")
+2016-07-19T20:14:28: Parsing "numpy.lib.utils" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\lib\utils.py")
+2016-07-19T20:14:28: Parsing "numpy.lib._datasource" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\lib\_datasource.py")
+2016-07-19T20:14:28: Parsing "numpy.lib._iotools" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\lib\_iotools.py")
+2016-07-19T20:14:28: Parsing "numpy.lib._version" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\lib\_version.py")
+2016-07-19T20:14:28: Parsing "numpy.lib" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\lib\__init__.py")
+2016-07-19T20:14:28: Parsing "numpy.linalg.info" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\linalg\info.py")
+2016-07-19T20:14:28: Parsing "numpy.linalg.linalg" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\linalg\linalg.py")
+2016-07-19T20:14:28: Parsing "numpy.linalg.setup" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\linalg\setup.py")
+2016-07-19T20:14:28: Parsing "numpy.linalg" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\linalg\__init__.py")
+2016-07-19T20:14:28: Parsing "numpy.ma.bench" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\ma\bench.py")
+2016-07-19T20:14:28: Parsing "numpy.ma.core" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\ma\core.py")
+2016-07-19T20:14:28: Parsing "numpy.ma.extras" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\ma\extras.py")
+2016-07-19T20:14:28: Parsing "numpy.ma.mrecords" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\ma\mrecords.py")
+2016-07-19T20:14:28: Parsing "numpy.ma.setup" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\ma\setup.py")
+2016-07-19T20:14:28: Parsing "numpy.ma.testutils" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\ma\testutils.py")
+2016-07-19T20:14:28: Parsing "numpy.ma.timer_comparison" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\ma\timer_comparison.py")
+2016-07-19T20:14:28: Parsing "numpy.ma.version" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\ma\version.py")
+2016-07-19T20:14:28: Parsing "numpy.ma" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\ma\__init__.py")
+2016-07-19T20:14:28: Parsing "numpy.matrixlib.defmatrix" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\matrixlib\defmatrix.py")
+2016-07-19T20:14:28: Parsing "numpy.matrixlib.setup" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\matrixlib\setup.py")
+2016-07-19T20:14:28: Parsing "numpy.matrixlib" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\matrixlib\__init__.py")
+2016-07-19T20:14:28: Parsing "numpy.polynomial.chebyshev" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\polynomial\chebyshev.py")
+2016-07-19T20:14:28: Parsing "numpy.polynomial.hermite" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\polynomial\hermite.py")
+2016-07-19T20:14:28: Parsing "numpy.polynomial.hermite_e" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\polynomial\hermite_e.py")
+2016-07-19T20:14:28: Parsing "numpy.polynomial.laguerre" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\polynomial\laguerre.py")
+2016-07-19T20:14:28: Parsing "numpy.polynomial.legendre" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\polynomial\legendre.py")
+2016-07-19T20:14:28: Parsing "numpy.polynomial.polynomial" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\polynomial\polynomial.py")
+2016-07-19T20:14:28: Parsing "numpy.polynomial.polyutils" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\polynomial\polyutils.py")
+2016-07-19T20:14:28: Parsing "numpy.polynomial.setup" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\polynomial\setup.py")
+2016-07-19T20:14:28: Parsing "numpy.polynomial._polybase" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\polynomial\_polybase.py")
+2016-07-19T20:14:28: Parsing "numpy.polynomial" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\polynomial\__init__.py")
+2016-07-19T20:14:28: Parsing "numpy.random.info" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\random\info.py")
+2016-07-19T20:14:28: Parsing "numpy.random.setup" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\random\setup.py")
+2016-07-19T20:14:28: Parsing "numpy.random" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\random\__init__.py")
+2016-07-19T20:14:28: Parsing "numpy.testing.decorators" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\testing\decorators.py")
+2016-07-19T20:14:28: Parsing "numpy.testing.noseclasses" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\testing\noseclasses.py")
+2016-07-19T20:14:28: Parsing "numpy.testing.nosetester" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\testing\nosetester.py")
+2016-07-19T20:14:28: Parsing "numpy.testing.print_coercion_tables" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\testing\print_coercion_tables.py")
+2016-07-19T20:14:28: Parsing "numpy.testing.setup" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\testing\setup.py")
+2016-07-19T20:14:28: Parsing "numpy.testing.utils" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\testing\utils.py")
+2016-07-19T20:14:28: Parsing "numpy.testing" ("C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy\testing\__init__.py")
+2016-07-19T20:14:28: Parsing complete
+2016-07-19T20:14:28: Analyzing "numpy.add_newdocs"
+2016-07-19T20:14:28: Analyzing "numpy.ctypeslib"
+2016-07-19T20:14:28: Analyzing "numpy.dual"
+2016-07-19T20:14:28: Analyzing "numpy.matlib"
+2016-07-19T20:14:28: Analyzing "numpy.setup"
+2016-07-19T20:14:28: Analyzing "numpy.version"
+2016-07-19T20:14:28: Analyzing "numpy._import_tools"
+2016-07-19T20:14:28: Analyzing "numpy.__config__"
+2016-07-19T20:14:28: Analyzing "numpy"
+2016-07-19T20:14:28: Analyzing "numpy.compat.py3k"
+2016-07-19T20:14:28: Analyzing "numpy.compat.setup"
+2016-07-19T20:14:28: Analyzing "numpy.compat._inspect"
+2016-07-19T20:14:28: Analyzing "numpy.compat"
+2016-07-19T20:14:28: Analyzing "numpy.core.arrayprint"
+2016-07-19T20:14:28: Analyzing "numpy.core.cversions"
+2016-07-19T20:14:28: Analyzing "numpy.core.defchararray"
+2016-07-19T20:14:28: Analyzing "numpy.core.fromnumeric"
+2016-07-19T20:14:28: Analyzing "numpy.core.function_base"
+2016-07-19T20:14:28: Analyzing "numpy.core.generate_numpy_api"
+2016-07-19T20:14:28: Analyzing "numpy.core.getlimits"
+2016-07-19T20:14:28: Analyzing "numpy.core.info"
+2016-07-19T20:14:28: Analyzing "numpy.core.machar"
+2016-07-19T20:14:28: Analyzing "numpy.core.memmap"
+2016-07-19T20:14:28: Analyzing "numpy.core.numeric"
+2016-07-19T20:14:28: Analyzing "numpy.core.numerictypes"
+2016-07-19T20:14:28: Analyzing "numpy.core.records"
+2016-07-19T20:14:28: Analyzing "numpy.core.setup"
+2016-07-19T20:14:28: Analyzing "numpy.core.setup_common"
+2016-07-19T20:14:28: Analyzing "numpy.core.shape_base"
+2016-07-19T20:14:28: Analyzing "numpy.core._internal"
+2016-07-19T20:14:28: Analyzing "numpy.core._methods"
+2016-07-19T20:14:28: Analyzing "numpy.core"
+2016-07-19T20:14:28: Analyzing "numpy.distutils.ccompiler"
+2016-07-19T20:14:28: Analyzing "numpy.distutils.compat"
+2016-07-19T20:14:28: Analyzing "numpy.distutils.conv_template"
+2016-07-19T20:14:28: Analyzing "numpy.distutils.core"
+2016-07-19T20:14:28: Analyzing "numpy.distutils.cpuinfo"
+2016-07-19T20:14:28: Analyzing "numpy.distutils.environment"
+2016-07-19T20:14:28: Analyzing "numpy.distutils.exec_command"
+2016-07-19T20:14:28: Analyzing "numpy.distutils.extension"
+2016-07-19T20:14:28: Analyzing "numpy.distutils.from_template"
+2016-07-19T20:14:28: Analyzing "numpy.distutils.info"
+2016-07-19T20:14:28: Analyzing "numpy.distutils.intelccompiler"
+2016-07-19T20:14:28: Analyzing "numpy.distutils.lib2def"
+2016-07-19T20:14:28: Analyzing "numpy.distutils.line_endings"
+2016-07-19T20:14:28: Analyzing "numpy.distutils.log"
+2016-07-19T20:14:28: Analyzing "numpy.distutils.mingw32ccompiler"
+2016-07-19T20:14:28: Analyzing "numpy.distutils.misc_util"
+2016-07-19T20:14:28: Analyzing "numpy.distutils.msvc9compiler"
+2016-07-19T20:14:28: Analyzing "numpy.distutils.msvccompiler"
+2016-07-19T20:14:28: Analyzing "numpy.distutils.npy_pkg_config"
+2016-07-19T20:14:28: Analyzing "numpy.distutils.numpy_distribution"
+2016-07-19T20:14:28: Analyzing "numpy.distutils.pathccompiler"
+2016-07-19T20:14:28: Analyzing "numpy.distutils.setup"
+2016-07-19T20:14:28: Analyzing "numpy.distutils.system_info"
+2016-07-19T20:14:28: Analyzing "numpy.distutils.unixccompiler"
+2016-07-19T20:14:28: Analyzing "numpy.distutils.__config__"
+2016-07-19T20:14:28: Analyzing "numpy.distutils"
+2016-07-19T20:14:28: Analyzing "numpy.distutils.__version__"
+2016-07-19T20:14:28: Analyzing "numpy.distutils.command.autodist"
+2016-07-19T20:14:28: Analyzing "numpy.distutils.command.bdist_rpm"
+2016-07-19T20:14:28: Analyzing "numpy.distutils.command.build"
+2016-07-19T20:14:28: Analyzing "numpy.distutils.command.build_clib"
+2016-07-19T20:14:28: Analyzing "numpy.distutils.command.build_ext"
+2016-07-19T20:14:28: Analyzing "numpy.distutils.command.build_py"
+2016-07-19T20:14:28: Analyzing "numpy.distutils.command.build_scripts"
+2016-07-19T20:14:28: Analyzing "numpy.distutils.command.build_src"
+2016-07-19T20:14:28: Analyzing "numpy.distutils.command.config"
+2016-07-19T20:14:28: Analyzing "numpy.distutils.command.config_compiler"
+2016-07-19T20:14:28: Analyzing "numpy.distutils.command.develop"
+2016-07-19T20:14:28: Analyzing "numpy.distutils.command.egg_info"
+2016-07-19T20:14:28: Analyzing "numpy.distutils.command.install"
+2016-07-19T20:14:28: Analyzing "numpy.distutils.command.install_clib"
+2016-07-19T20:14:28: Analyzing "numpy.distutils.command.install_data"
+2016-07-19T20:14:28: Analyzing "numpy.distutils.command.install_headers"
+2016-07-19T20:14:28: Analyzing "numpy.distutils.command.sdist"
+2016-07-19T20:14:28: Analyzing "numpy.distutils.command"
+2016-07-19T20:14:28: Analyzing "numpy.distutils.fcompiler.absoft"
+2016-07-19T20:14:28: Analyzing "numpy.distutils.fcompiler.compaq"
+2016-07-19T20:14:28: Analyzing "numpy.distutils.fcompiler.g95"
+2016-07-19T20:14:28: Analyzing "numpy.distutils.fcompiler.gnu"
+2016-07-19T20:14:28: Analyzing "numpy.distutils.fcompiler.hpux"
+2016-07-19T20:14:28: Analyzing "numpy.distutils.fcompiler.ibm"
+2016-07-19T20:14:28: Analyzing "numpy.distutils.fcompiler.intel"
+2016-07-19T20:14:28: Analyzing "numpy.distutils.fcompiler.lahey"
+2016-07-19T20:14:28: Analyzing "numpy.distutils.fcompiler.mips"
+2016-07-19T20:14:28: Analyzing "numpy.distutils.fcompiler.nag"
+2016-07-19T20:14:28: Analyzing "numpy.distutils.fcompiler.none"
+2016-07-19T20:14:28: Analyzing "numpy.distutils.fcompiler.pathf95"
+2016-07-19T20:14:28: Analyzing "numpy.distutils.fcompiler.pg"
+2016-07-19T20:14:28: Analyzing "numpy.distutils.fcompiler.sun"
+2016-07-19T20:14:28: Analyzing "numpy.distutils.fcompiler.vast"
+2016-07-19T20:14:28: Analyzing "numpy.distutils.fcompiler"
+2016-07-19T20:14:28: Analyzing "numpy.doc.basics"
+2016-07-19T20:14:28: Analyzing "numpy.doc.broadcasting"
+2016-07-19T20:14:28: Analyzing "numpy.doc.byteswapping"
+2016-07-19T20:14:28: Analyzing "numpy.doc.constants"
+2016-07-19T20:14:28: Analyzing "numpy.doc.creation"
+2016-07-19T20:14:28: Analyzing "numpy.doc.glossary"
+2016-07-19T20:14:28: Analyzing "numpy.doc.howtofind"
+2016-07-19T20:14:28: Analyzing "numpy.doc.indexing"
+2016-07-19T20:14:28: Analyzing "numpy.doc.internals"
+2016-07-19T20:14:28: Analyzing "numpy.doc.io"
+2016-07-19T20:14:28: Analyzing "numpy.doc.jargon"
+2016-07-19T20:14:28: Analyzing "numpy.doc.methods_vs_functions"
+2016-07-19T20:14:28: Analyzing "numpy.doc.misc"
+2016-07-19T20:14:28: Analyzing "numpy.doc.performance"
+2016-07-19T20:14:28: Analyzing "numpy.doc.structured_arrays"
+2016-07-19T20:14:28: Analyzing "numpy.doc.subclassing"
+2016-07-19T20:14:28: Analyzing "numpy.doc.ufuncs"
+2016-07-19T20:14:28: Analyzing "numpy.doc"
+2016-07-19T20:14:28: Analyzing "numpy.f2py.auxfuncs"
+2016-07-19T20:14:28: Analyzing "numpy.f2py.capi_maps"
+2016-07-19T20:14:28: Analyzing "numpy.f2py.cb_rules"
+2016-07-19T20:14:28: Analyzing "numpy.f2py.cfuncs"
+2016-07-19T20:14:28: Analyzing "numpy.f2py.common_rules"
+2016-07-19T20:14:28: Analyzing "numpy.f2py.crackfortran"
+2016-07-19T20:14:28: Analyzing "numpy.f2py.diagnose"
+2016-07-19T20:14:28: Analyzing "numpy.f2py.f2py2e"
+2016-07-19T20:14:28: Analyzing "numpy.f2py.f2py_testing"
+2016-07-19T20:14:28: Analyzing "numpy.f2py.f90mod_rules"
+2016-07-19T20:14:28: Analyzing "numpy.f2py.func2subr"
+2016-07-19T20:14:28: Analyzing "numpy.f2py.info"
+2016-07-19T20:14:28: Analyzing "numpy.f2py.rules"
+2016-07-19T20:14:28: Analyzing "numpy.f2py.setup"
+2016-07-19T20:14:28: Analyzing "numpy.f2py.use_rules"
+2016-07-19T20:14:28: Analyzing "numpy.f2py"
+2016-07-19T20:14:28: Analyzing "numpy.f2py.__main__"
+2016-07-19T20:14:28: Analyzing "numpy.f2py.__version__"
+2016-07-19T20:14:28: Analyzing "numpy.fft.fftpack"
+2016-07-19T20:14:28: Analyzing "numpy.fft.helper"
+2016-07-19T20:14:28: Analyzing "numpy.fft.info"
+2016-07-19T20:14:28: Analyzing "numpy.fft.setup"
+2016-07-19T20:14:28: Analyzing "numpy.fft"
+2016-07-19T20:14:28: Analyzing "numpy.lib.arraypad"
+2016-07-19T20:14:28: Analyzing "numpy.lib.arraysetops"
+2016-07-19T20:14:28: Analyzing "numpy.lib.arrayterator"
+2016-07-19T20:14:28: Analyzing "numpy.lib.financial"
+2016-07-19T20:14:28: Analyzing "numpy.lib.format"
+2016-07-19T20:14:28: Analyzing "numpy.lib.function_base"
+2016-07-19T20:14:28: Analyzing "numpy.lib.index_tricks"
+2016-07-19T20:14:28: Analyzing "numpy.lib.info"
+2016-07-19T20:14:28: Analyzing "numpy.lib.nanfunctions"
+2016-07-19T20:14:28: Analyzing "numpy.lib.npyio"
+2016-07-19T20:14:28: Analyzing "numpy.lib.polynomial"
+2016-07-19T20:14:28: Analyzing "numpy.lib.recfunctions"
+2016-07-19T20:14:28: Analyzing "numpy.lib.scimath"
+2016-07-19T20:14:28: Analyzing "numpy.lib.setup"
+2016-07-19T20:14:28: Analyzing "numpy.lib.shape_base"
+2016-07-19T20:14:28: Analyzing "numpy.lib.stride_tricks"
+2016-07-19T20:14:28: Analyzing "numpy.lib.twodim_base"
+2016-07-19T20:14:28: Analyzing "numpy.lib.type_check"
+2016-07-19T20:14:28: Analyzing "numpy.lib.ufunclike"
+2016-07-19T20:14:28: Analyzing "numpy.lib.user_array"
+2016-07-19T20:14:28: Analyzing "numpy.lib.utils"
+2016-07-19T20:14:28: Analyzing "numpy.lib._datasource"
+2016-07-19T20:14:28: Analyzing "numpy.lib._iotools"
+2016-07-19T20:14:28: Analyzing "numpy.lib._version"
+2016-07-19T20:14:28: Analyzing "numpy.lib"
+2016-07-19T20:14:28: Analyzing "numpy.linalg.info"
+2016-07-19T20:14:28: Analyzing "numpy.linalg.linalg"
+2016-07-19T20:14:28: Analyzing "numpy.linalg.setup"
+2016-07-19T20:14:28: Analyzing "numpy.linalg"
+2016-07-19T20:14:28: Analyzing "numpy.ma.bench"
+2016-07-19T20:14:28: Analyzing "numpy.ma.core"
+2016-07-19T20:14:28: Analyzing "numpy.ma.extras"
+2016-07-19T20:14:28: Analyzing "numpy.ma.mrecords"
+2016-07-19T20:14:28: Analyzing "numpy.ma.setup"
+2016-07-19T20:14:28: Analyzing "numpy.ma.testutils"
+2016-07-19T20:14:28: Analyzing "numpy.ma.timer_comparison"
+2016-07-19T20:14:28: Analyzing "numpy.ma.version"
+2016-07-19T20:14:28: Analyzing "numpy.ma"
+2016-07-19T20:14:28: Analyzing "numpy.matrixlib.defmatrix"
+2016-07-19T20:14:28: Analyzing "numpy.matrixlib.setup"
+2016-07-19T20:14:28: Analyzing "numpy.matrixlib"
+2016-07-19T20:14:28: Analyzing "numpy.polynomial.chebyshev"
+2016-07-19T20:14:28: Analyzing "numpy.polynomial.hermite"
+2016-07-19T20:14:28: Analyzing "numpy.polynomial.hermite_e"
+2016-07-19T20:14:28: Analyzing "numpy.polynomial.laguerre"
+2016-07-19T20:14:28: Analyzing "numpy.polynomial.legendre"
+2016-07-19T20:14:28: Analyzing "numpy.polynomial.polynomial"
+2016-07-19T20:14:28: Analyzing "numpy.polynomial.polyutils"
+2016-07-19T20:14:28: Analyzing "numpy.polynomial.setup"
+2016-07-19T20:14:28: Analyzing "numpy.polynomial._polybase"
+2016-07-19T20:14:28: Analyzing "numpy.polynomial"
+2016-07-19T20:14:28: Analyzing "numpy.random.info"
+2016-07-19T20:14:28: Analyzing "numpy.random.setup"
+2016-07-19T20:14:28: Analyzing "numpy.random"
+2016-07-19T20:14:28: Analyzing "numpy.testing.decorators"
+2016-07-19T20:14:28: Analyzing "numpy.testing.noseclasses"
+2016-07-19T20:14:28: Analyzing "numpy.testing.nosetester"
+2016-07-19T20:14:28: Analyzing "numpy.testing.print_coercion_tables"
+2016-07-19T20:14:28: Analyzing "numpy.testing.setup"
+2016-07-19T20:14:28: Analyzing "numpy.testing.utils"
+2016-07-19T20:14:28: Analyzing "numpy.testing"
+2016-07-19T20:14:28: Starting analysis of 195 modules
+2016-07-19T20:14:37: Analysis complete
+2016-07-19T20:14:37: Saving group "C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy"
+2016-07-19T20:14:39: End of group "C:\Users\ilmat\Documents\GitHub\PoolShark\flask\wildnature\WebProject1\env1\Lib\site-packages\numpy"
+2016-07-19T20:14:40: Deleting 0 files
+
+2016-07-19T20:34:15: Start analysis
+2016-07-19T20:34:15: [WARNING] Library was set explicitly - skipping path detection
+2016-07-19T20:34:15: IncludeModulesFromModulePath = win32com
+2016-07-19T20:34:16: Deleting 0 files

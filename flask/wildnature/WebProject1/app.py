@@ -100,12 +100,13 @@ def upload():
         printLogMsg("Uploading file to local directory...")
         imgFilename, imgPath = saveRequestFile(file)
         printLogMsg("Calling entry CV function...")
-        # img,confidence,bboxes = findAndDrawGiraffeBody(imgPath)
+        img = imread(imgPath)
+        poolTableDetectAndGetCoordinates(imgPath)
         os.remove(imgPath)
 
         printLogMsg("Generating result site...")
         #if len(bboxes)==0:
-        text = "No giraffe found"
+        text = "No best shot found"
         #else:
         #     text = "Found giraffe body with confidence {0} at location: {1}".format(confidence, str(bboxes[0])[13:])
         resultsImgFilename,_ = saveResultImg(imgFilename, img)   
