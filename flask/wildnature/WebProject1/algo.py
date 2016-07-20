@@ -97,7 +97,7 @@ def poolTableDetectAndGetCoordinates(imgPath):
             newedge = []
             for (x, y) in edge:
                 for (s, t) in ((x+1, y), (x-1, y), (x, y+1), (x, y-1)):
-                    if s < image.shape[0] and t < image.shape[1] and \
+                    if s < image.shape[0] and t < image.shape[1] and s >= 0 and t >= 0 and \
                 	    image[s, t] not in (BORDER_COLOR, value):
                         image[s, t] = value
                         points.append((s, t))
@@ -108,6 +108,9 @@ def poolTableDetectAndGetCoordinates(imgPath):
         return count, points
 
     # thresholds for different balls / background
+    low_white = np.array([30, 0, 210], dtype=np.uint8)
+    high_white = np.array([120, 40, 255], dtype=np.uint8)
+
     low_bkg = np.array([15, 40, 50], dtype=np.uint8)
     high_bkg = np.array([40, 190, 200], dtype=np.uint8)
 
@@ -140,14 +143,20 @@ def poolTableDetectAndGetCoordinates(imgPath):
     # mask the blue balls
     blue_mask = cv2.inRange(hsv, low_blue, high_blue)
 
+    # mask the cue ball
+    white_mask = cv2.inRange(hsv, low_white, high_white)
+
     yellows = cv2.bitwise_and(objects, objects, mask=yellow_mask)
     reds = cv2.bitwise_and(objects, objects, mask=red_mask)
     blues = cv2.bitwise_and(objects, objects, mask=blue_mask)
+    whites = cv2.bitwise_and(objects, objects, mask=white_mask)
+    cv2.imwrite('whites.jpg', whites)
 
     # find the biggest cloud of 1's in the yellow mask
     yellow_image = yellow_mask / 255.
     red_image = red_mask / 255.
     blue_image = blue_mask / 255.
+    white_image = white_mask / 255.
     
     def findBiggestCloud(image):
         biggest_cloud = []
@@ -169,11 +178,11 @@ def poolTableDetectAndGetCoordinates(imgPath):
 
         totalY=0.0
         totalX=0.0
-        for i in range (0,count):
+        for i in range (0,biggest_count):
             totalY += biggest_cloud[i][0]
             totalX += biggest_cloud[i][1]
-        ycoord = totalY / count
-        xcoord = totalX / count
+        ycoord = totalY / biggest_count
+        xcoord = totalX / biggest_count
         return xcoord, ycoord
 
     def findBiggestAndSecondBiggestCloud(image):
@@ -194,8 +203,8 @@ def poolTableDetectAndGetCoordinates(imgPath):
                 biggest_cloud = cloud
             elif count > second_biggest_count:
                 print count
-                second_biggest_count = biggest_count
-                second_biggest_cloud = biggest_cloud
+                second_biggest_count = count
+                second_biggest_cloud = cloud
             components = np.where(image == 1)
 
         # print biggest_cloud
@@ -228,12 +237,15 @@ def poolTableDetectAndGetCoordinates(imgPath):
     cv2.circle(frame, (int(xred), int(yred)), 30, (0,255,64), -1)
     xblue, yblue = findBiggestCloud(blue_image)
     cv2.circle(frame, (int(xblue), int(yblue)), 30, (0,255,64), -1)
+    xwht, ywht = findBiggestCloud(white_image)
+    cv2.circle(frame, (int(xwht), int(ywht)), 30, (255,0,255), -1)
 
     cv2.imwrite('mask.jpg', bkg_mask)
     cv2.imwrite('img_bkg_mask.jpg', img_bkg_mask)
     cv2.imwrite('yellows.jpg', yellows)
     cv2.imwrite('reds.jpg', reds)
     cv2.imwrite('blues.jpg', blues)
+    cv2.imwrite('whites.jpg', whites)
     cv2.imwrite('frame.jpg', frame)
 
     return frame
