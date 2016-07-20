@@ -1,7 +1,0 @@
-run_module_suite
-assert_array_equal
-np
-__name__
-histograms
-TestHistogram
-assert_equal

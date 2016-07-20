@@ -1,9 +1,0 @@
-ipython_console_highlighting
-only_directives
-ipython_directive
-unicode_literals
-division
-print_function
-mathmpl
-absolute_import
-plot_directive

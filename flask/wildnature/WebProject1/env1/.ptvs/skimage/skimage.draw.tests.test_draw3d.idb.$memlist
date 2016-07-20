@@ -1,9 +1,0 @@
-test_ellipsoid_bool
-ellipsoid
-raises
-np
-assert_array_equal
-ellipsoid_stats
-test_ellipsoid_stats
-assert_allclose
-test_ellipsoid_levelset

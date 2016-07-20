@@ -1,8 +1,0 @@
-Perceptron
-assert_raise_message
-assert_equal
-test_base_zero_n_estimators
-assert_true
-BaggingClassifier
-load_iris
-test_base

@@ -1,7 +1,0 @@
-__all__
-gabor_kernel
-np
-gabor_filter
-assert_nD
-_sigma_prefactor
-ndimage

@@ -1,8 +1,0 @@
-doctest_skip_parser
-assert_true
-HAVE_AMODULE
-np
-assert_raises
-test_skipper
-assert_equal
-HAVE_BMODULE

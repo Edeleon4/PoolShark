@@ -1,25 +1,0 @@
-€}qUmembersq}q(Uiterate_and_store_3dq}q(UkindqUfunctionqUvalueq}q	(U	overloadsq
-]q}q(UdocqUüIterate across the given array in a marching-cubes fashion,
-    looking for volumes with edges that cross 'level'. If such a volume is
-    found, appropriate triangulations are added to a growing list of
-    faces to be returned by this function.
-
-    Uargsq}q(U
-arg_formatqU*Unameqhu}q(hU**qhUkwargsqu†uahUüIterate across the given array in a marching-cubes fashion,
-    looking for volumes with edges that cross 'level'. If such a volume is
-    found, appropriate triangulations are added to a growing list of
-    faces to be returned by this function.
-
-    uuU_append_trisq}q(hhh}qh
-NsuU__builtins__q}q(hUdataqh}qUtypeq]qU__builtin__qUmodule†qasuU__file__q }q!(hhh}q"h]q#hUstr†q$asuU__package__q%}q&(hhh}q'h]q(h$asuU__test__q)}q*(hhh}q+h]q,hUdict†q-asuUnpq.}q/(hhh}q0h]q1hasuU__name__q2}q3(hhh}q4h]q5h$asuUunpack_unique_vertsq6}q7(hhh}q8(h
-]q9}q:(hUÆ
-    Convert a list of lists of tuples corresponding to triangle vertices
-    into a unique vertex list, and a list of triangle faces w/indices
-    corresponding to entries of the vertex list.
-
-    h}q;(hU*hhu}q<(hhhhu†uahUÆ
-    Convert a list of lists of tuples corresponding to triangle vertices
-    into a unique vertex list, and a list of triangle faces w/indices
-    corresponding to entries of the vertex list.
-
-    uuU__doc__q=}q>(hhh}q?h]q@hUNoneType†qAasuus.

@@ -1,5 +1,0 @@
-load_sift
-load_surf
-_sift_read
-__all__
-np

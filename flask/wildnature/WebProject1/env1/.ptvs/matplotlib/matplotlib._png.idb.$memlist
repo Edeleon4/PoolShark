@@ -1,9 +1,0 @@
-__doc__
-__file__
-__name__
-__package__
-read_png
-read_png_float
-read_png_int
-read_png_uint8
-write_png

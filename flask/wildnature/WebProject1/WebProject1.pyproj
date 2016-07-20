@@ -17,7 +17,7 @@
     <PythonWsgiHandler>app.wsgi_app</PythonWsgiHandler>
     <Name>WebProject1</Name>
     <RootNamespace>WebProject1</RootNamespace>
-    <InterpreterId>{3a93b51e-727c-490e-b721-e426eaad1fff}</InterpreterId>
+    <InterpreterId>{9b0817af-d9cd-48b1-a708-6c1c04d453d7}</InterpreterId>
     <InterpreterVersion>2.7</InterpreterVersion>
     <NameOfLastUsedPublishProfile>AzureMLPool (2)</NameOfLastUsedPublishProfile>
     <SccProjectName>SAK</SccProjectName>
@@ -63,20 +63,20 @@
     <Folder Include="templates\" />
   </ItemGroup>
   <ItemGroup>
-    <Interpreter Include="env1\">
-      <Id>{3a93b51e-727c-490e-b721-e426eaad1fff}</Id>
+    <InterpreterReference Include="{43eea37f-3c48-48a8-adc5-46466459604b}\2.7" />
+  </ItemGroup>
+  <ItemGroup>
+    <Interpreter Include="env\">
+      <Id>{9b0817af-d9cd-48b1-a708-6c1c04d453d7}</Id>
       <BaseInterpreter>{2af0f10d-7135-4994-9156-5d01c9c11b7e}</BaseInterpreter>
       <Version>2.7</Version>
-      <Description>env1 (Python 2.7)</Description>
+      <Description>env (Python 2.7)</Description>
       <InterpreterPath>Scripts\python.exe</InterpreterPath>
       <WindowsInterpreterPath>Scripts\pythonw.exe</WindowsInterpreterPath>
       <LibraryPath>Lib\</LibraryPath>
       <PathEnvironmentVariable>PYTHONPATH</PathEnvironmentVariable>
       <Architecture>X86</Architecture>
     </Interpreter>
-  </ItemGroup>
-  <ItemGroup>
-    <InterpreterReference Include="{43eea37f-3c48-48a8-adc5-46466459604b}\2.7" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.Web.targets" />
   <!-- Specify pre- and post-build commands in the BeforeBuild and 

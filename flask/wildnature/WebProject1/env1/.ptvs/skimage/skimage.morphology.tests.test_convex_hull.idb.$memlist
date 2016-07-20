@@ -1,9 +1,0 @@
-assert_raises
-possible_hull
-scipy
-skipif
-convex_hull_object
-np
-assert_array_equal
-scipy_spatial
-convex_hull_image

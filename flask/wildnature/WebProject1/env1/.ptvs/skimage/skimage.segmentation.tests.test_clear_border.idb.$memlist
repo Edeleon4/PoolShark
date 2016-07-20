@@ -1,4 +1,0 @@
-test_clear_border
-clear_border
-assert_array_equal
-np

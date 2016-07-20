@@ -1,9 +1,0 @@
-rect_tool
-viewer
-RectangleSelector
-ToolHandles
-__all__
-ImageViewer
-RectangleTool
-CanvasToolBase
-data

@@ -1,7 +1,0 @@
-__author__
-is_string_like
-open_file
-parse_leda
-__all__
-NetworkXError
-nx

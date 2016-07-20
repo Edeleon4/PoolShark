@@ -1,5 +1,0 @@
-HeaderParsingError
-is_response_to_head
-assert_header_parsing
-is_fp_closed
-httplib
